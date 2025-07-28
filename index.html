@@ -64,7 +64,7 @@
     }
 </head>
 <body>
-  <header>
+  <header style="background-color: #1f2d3d; position: relative; overflow: hidden;">
     <img src="logo-roumie.png" alt="Logo Roumié" class="logo" />
     <div class="menu"><a href="#contato">Contato</a></div>
 
@@ -78,15 +78,14 @@
       <div class="header-photo">
         <img src="foto-fernando.jpg" alt="Foto do Dr. Fernando" />
       </div>
-    </div> <!-- FIM DO .header-container -->
+    </div> <!-- fim do header-container -->
 
-  <!-- SVG da ondulação -->
-<div style="position: relative; overflow: hidden; line-height: 0;">
-  <svg viewBox="0 0 1440 320" preserveAspectRatio="none" style="display: block; width: 100%; height: 100px;">
-    <path fill="#1f2d3d" d="M0,96 C360,160 1080,0 1440,80 L1440,320 L0,320 Z"></path>
-  </svg>
-</div>
+    <!-- SVG suave e limpo -->
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none" style="position: absolute; bottom: 0; width: 100%; height: 100px;">
+      <path d="M0,160 C480,260 960,60 1440,160 L1440,320 L0,320 Z" fill="#ffffff"></path>
+    </svg>
   </header>
+
   <section class="areas">
     <h2>Atuação Especializada em:</h2>
     <ul class="areas-list">
