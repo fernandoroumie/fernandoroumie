@@ -142,7 +142,59 @@
     .floating-wpp { position: fixed; bottom: 50%; right: 20px; background-color: #25D366; border-radius: 50%; width: 60px; height: 60px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; animation: pulse 1.5s infinite; z-index: 1000; }
     .floating-wpp img { width: 30px; height: 30px; }
     @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.15); } 100% { transform: scale(1); } }
-    @media (max-width: 768px) { .header-container { flex-direction: column; text-align: center; } .header-text { padding: 0; } .menu { top: 15px; right: 15px; } .logo { top: 15px; left: 15px; width: 120px; } }
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 1rem 1rem 1rem;
+    text-align: center;
+  }
+
+  .logo {
+    position: static;
+    width: 130px;
+    margin-bottom: 1rem;
+    top: auto;
+    left: auto;
+  }
+
+  .menu {
+    position: static;
+    margin-bottom: 1rem;
+    top: auto;
+    right: auto;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1rem;
+    text-align: center;
+  }
+
+  .header-text {
+    padding: 0;
+  }
+
+  .header-text h1 {
+    font-size: 1.4rem;
+    padding: 0 10px;
+  }
+
+  .whatsapp {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .floating-wpp {
+    bottom: 80px;
+    right: 16px;
+  }
+
+  .header-photo img {
+    max-width: 250px;
+    margin-top: 1rem;
+  }
+}
   </style>
   <script>
   function toggleSobreMim() {
