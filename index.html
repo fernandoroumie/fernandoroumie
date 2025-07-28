@@ -51,11 +51,17 @@
     @media (max-width: 768px) { .header-container { flex-direction: column; text-align: center; } .header-text { padding: 0; } .menu { top: 15px; right: 15px; } .logo { top: 15px; left: 15px; width: 120px; } }
   </style>
   <script>
-    function toggleText(id) {
-      var el = document.getElementById(id);
-      el.style.display = el.style.display === 'block' ? 'none' : 'block';
+  function toggleText(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function toggleSobreMim() {
+    const el = document.getElementById("sobreMimContent");
+    el.style.display = el.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
     }
-  </script>
 </head>
 <body>
   <header>
