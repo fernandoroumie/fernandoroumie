@@ -36,6 +36,38 @@
     .header-photo img { max-width: 300px; width: 100%; border-radius: 12px; box-shadow: 0 0 15px rgba(0,0,0,0.3); }
     section { padding: 1.0rem 1rem; }
     section h2 { text-align: center; color: #0D1B2A; }
+    .benefits {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.benefits h2 {
+  text-align: center;
+  color: #0D1B2A;
+  margin-bottom: 1.5rem;
+}
+
+.benefits-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.benefits-list li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.8rem;
+  position: relative;
+}
+
+.benefits-list li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
     .areas-list {
     display: flex;
     flex-direction: column;
