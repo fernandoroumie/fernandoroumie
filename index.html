@@ -115,8 +115,8 @@
 }
 
 .area-card img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-bottom: 10px;
   object-fit: cover;
@@ -145,14 +145,26 @@
     @media (max-width: 768px) { .header-container { flex-direction: column; text-align: center; } .header-text { padding: 0; } .menu { top: 15px; right: 15px; } .logo { top: 15px; left: 15px; width: 120px; } }
   </style>
   <script>
-  function toggleText(id) {
-    const el = document.getElementById(id);
-    el.style.display = el.style.display === 'block' ? 'none' : 'block';
-  }
-
   function toggleSobreMim() {
     const el = document.getElementById("sobreMimContent");
     el.style.display = el.style.display === 'block' ? 'none' : 'block';
+  }
+    @media (max-width: 600px) {
+  .area-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .area-card {
+    padding: 0.75rem;
+  }
+
+  .area-card p {
+    font-size: 0.9rem;
+  }
+
+  .areas-grid {
+    gap: 12px;
   }
 </script>
 </head>
@@ -163,7 +175,7 @@
 
     <div class="header-container">
       <div class="header-text">
-        <h1>Escritório de Advocacia Online para te <span>ajudar com seus direitos trabalhistas</span>.</h1>
+       <h1 style="font-size: 2rem; margin-bottom: 1rem;">Escritório de Advocacia Online para te <span>ajudar com seus direitos trabalhistas</span>.</h1>
         <a class="whatsapp" href="https://wa.me/5591988904046?text=Olá,+gostaria+de+uma+análise+do+meu+caso+trabalhista!" target="_blank">
           <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" style="width: 24px; height: 24px;"/> FALAR COM O ADVOGADO AGORA
         </a>
